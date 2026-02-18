@@ -1,36 +1,29 @@
 {
-  "inbounds": [
-    {
-      "port": 8080,
-      "protocol": "trojan",
-      "settings": {
-        "clients": [
-          {
-            "password": "GCP-ANES-DZ",
-            "level": 0
-          }
-        ],
-        "decryption": "none"
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/ANES-VIP",
-          "maxConnections": 0
-        },
-        "sockopt": {
-          "tcpFastOpen": true,
-          "tproxy": "off"
-        }
-      }
-    }
-  ],
-  "outbounds": [
-    {
-      "protocol": "freedom",
-      "settings": {
-        "domainStrategy": "UseIP"
-      }
-    }
-  ]
+"inbounds": [
+{
+"port": 8080,
+"protocol": "trojan",
+"settings": {
+"clients": [
+{
+"password": "GCP-ANES-DZ",
+"level": 0
+}
+],
+"decryption": "none"
+},
+"streamSettings": {
+"network": "ws",
+"wsSettings": {
+"path": "/ANES-VIP"
+}
+}
+}
+],
+"outbounds": [
+{
+"protocol": "freedom",
+"settings": {}
+}
+]
 }
